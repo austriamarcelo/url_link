@@ -29,3 +29,7 @@ url_link is a simple gem to convert url from the text into the url links. It can
 == INSTALL:
 
 * gem install url_link
+
+== Copyright
+
+Copyright (c) 2014 Marcelo Austria. See LICENSE for details.
