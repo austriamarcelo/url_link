@@ -1,12 +1,13 @@
 class UrlLink
   def self.format(url_link)
-  unless url_link.blank?
-   url_link.gsub( %r{(http|https)://[^\s<]+} ) do |url|
+    unless url_link.blank?
+     url_link.gsub( %r{(http|https)://[^\s<]+} ) do |url|
       if url[/(?:png|jpe?g|gif|svg)$/]
         "<img src='#{url}' />"
       else
         "<a href='#{url}' target='_blank'>#{url}</a> "
       end
+     end
     end
   end
 end
