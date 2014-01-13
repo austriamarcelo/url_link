@@ -6,7 +6,8 @@
 
 == FEATURES:
 
-url_link is a simple gem to convert url from the text into the url links. It can convert the links and images perfectly.
+url_link is a simple gem to convert url from the text or string into the url links.It can convert the email and image link into html format perfectly.
+
 
 == DESCRIPTION:
 
