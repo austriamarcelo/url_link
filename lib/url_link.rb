@@ -5,11 +5,6 @@ module UrlLink
 
        def proper_url_link(url_link)
         unless url_link.blank?
-          
-          url_link.gsub( /\s*([^\s]+@[^\s]+\.[^\s]+)\s*/ ) do |email_to|
-            "<a href='mailto:#{email_to}'>#{email_to}</a>"
-          end
-
           url_link.gsub( %r{(http|https)://[^\s<]+} ) do |url|
             if url[/(?:png|jpe?g|gif|svg)$/]
               "<img src='#{url}' />"
@@ -39,7 +34,6 @@ module UrlLink
          proper_html(proper_email(proper_url_link(url_link_format)))
         end
       end
-
 
    end
  end
