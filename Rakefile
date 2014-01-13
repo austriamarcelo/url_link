@@ -1,8 +1,16 @@
 require 'rake/testtask'
 
 Rake::TestTask.new do |t|
+    t.libs << 'lib'
   t.libs << 'test'
 end
 
-desc "Run tests"
-task :default => :test
+desc "Test the url_link plugin."
+task default: :test
+
+
+# Rake::TestTask.new(:test) do |t|
+#   t.libs << 'lib'
+#   t.libs << 'test'
+
+
