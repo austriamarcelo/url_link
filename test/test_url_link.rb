@@ -1,7 +1,7 @@
 require 'test/unit'
 require 'url_link'
 
-class UrlLinkTest < Test::Unit::TestCase
+class TestUrlLink < Test::Unit::TestCase
   def test_http
       assert_equal "Welcome to my website <a href='http://www.mywebsite.com'>http://www.mywebsite.com</a>",
       url_link("Welcome to my website http://www.mywebsite.com")
