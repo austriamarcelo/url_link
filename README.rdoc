@@ -18,7 +18,6 @@ url_link is a simple gem to convert url from the text into the url links. It can
     url_link(image_string)
     result => <img src="http://blogspot.com/images/screenshot.png"/>
       
-<<<<<<< HEAD
     email = "this is my email: marceloaustria@yahoo.com"  
     url_link(email)
     result => this is my email: <a href="mailto:marceloaustria@yahoo.com">marceloaustria@yahoo.com</a>
@@ -26,13 +25,6 @@ url_link is a simple gem to convert url from the text into the url links. It can
     string = "Welcome to my website http://www.mywebsite.com see the picture http://blogspot.com/images/screenshot.png and this my email: marceloaustria@yahoo.com"
     url_link(string)
     result => welcome to my website <a href='http://www.mywebsite.com'>http://www.mywebsite.com</a> see the picture <img src="http://blogspot.com/images/screenshot.png"/> and this is my email: <a href="mailto:marceloaustria@yahoo.com">marceloaustria@yahoo.com</a>
-=======
-    string = "Welcome to my website http://www.mywebsite.com
-            see the picture http://media.smashingmagazine.com/images/introduction-to-rails/rails.jpg"
-    url_link(format(string))
-    result => welcome to my website <a href='http://www.mywebsite.com'>http://www.mywebsite.com</a>
-              see the picture <img src="http://media.smashingmagazine.com/images/introduction-to-rails/rails.jpg"/>
->>>>>>> 5084050c0fe7e1785a3292c69fc88eb7d7be9d8f
 
 == REQUIREMENTS:
 
