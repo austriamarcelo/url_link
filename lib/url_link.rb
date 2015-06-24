@@ -3,10 +3,10 @@ module UrlLink
     module Helpers # :nodoc:
       module TextHelper
 
-       def proper_url_link(url_link)
+       def proper_url_link(url_link, force_blank = false)
         unless url_link.blank?
           url_link.gsub( %r{(http|https)://[^\s<]+} ) do |url|
-            if url[/(?:png|jpe?g|gif|svg)$/]
+            if url[/(?:png|jpe?g|gif|svg)$/] && !force_blank
               "<img src='#{url}' />"
             else
               "<a href='#{url}' target='_blank'>#{url}</a> "
@@ -29,9 +29,9 @@ module UrlLink
         end
       end
 
-      def url_link(url_link_format)
+      def url_link(url_link_format, force_blank = false)
         unless url_link_format.blank?
-         proper_html(proper_email(proper_url_link(url_link_format)))
+         proper_html(proper_email(proper_url_link(url_link_format, force_blank)))
         end
       end
 
